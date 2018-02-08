@@ -7,6 +7,9 @@
     <title>Which Maple Leaf are you?</title>
 </head>
 <body>
+    <audio controls loop autoplay class="nhl94">
+        <source src="assets/NHL 94 (Genesis) Intro Theme.mp3" type="audio/mp3">
+    </audio>
     <header>
         <h1>Which Maple Leaf are you?</h1>
     </header>
@@ -18,7 +21,7 @@
                     <input type="radio" id="question1Choice1" name="q1" value="1">
                     <label for="question1Choice1">Yes</label>
                     
-                    <input type="radio" id="question1Choice2" name="q1" value="0">
+                    <input type="radio" id="question1Choice2" name="q1" value="900">
                     <label for="question1Choice2">No</label>
                 </div>
                 <div class="question2">
@@ -57,7 +60,10 @@
                     <label for="question5Choice2">No</label>
                 </div>
                 <div class="submit">
-                    <input type="submit" value="Submit Your Answers!">
+                    <input type="submit" value="Generate" name="submit">
+                </div>
+                <div class="reset">
+                    <input type="reset" name="reset" value="Line Change!">
                 </div>
             </form>
         </section>
