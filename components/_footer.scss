@@ -1,0 +1,22 @@
+footer {
+    margin-top: 20px;
+    font-size: 12px;
+    width: 100%;
+    .footerContainer {
+        display: flex;
+        align-items: center;
+        padding-bottom: 20px;
+        .socialMedia {
+            margin-left: 5px;
+        }
+    }
+}
+
+.socialMedia .fa-facebook-square, .socialMedia .fa-instagram, .socialMedia .fa-twitter {
+    font-size: 15px;
+    margin: 0 3px;
+    color: #003E7E;
+    &:hover {
+        color: darkgray;
+    }
+}

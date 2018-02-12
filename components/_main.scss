@@ -1,0 +1,87 @@
+main {
+   background: #003E7E;
+   background-image: linear-gradient(to top, rgba(255,255,255, 0.3), rgba(255,255,255,0.1));
+    .question1 input, .question2 input, .question3 input, .question4 input, .question5 input {
+        display: none;
+        &:checked + label {
+            background-color: blue;
+            color: #fff;
+        }
+    }
+    label {
+        padding: 10px 30px;
+        background-color: #fff;
+        justify-content: space-between;
+        width: 40%;
+        margin: 4px;
+        border-radius: 50px;
+        transition: 1s all ease;
+        &:hover {
+            background-color: #003E7E;
+            box-shadow: 3px 7px 14px #fff;
+            cursor: pointer;
+            color: #fff;
+        }
+    }
+    .buttons {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        padding-bottom: 70px;
+        width: 100%;
+        .submit, .reset {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        .submit input, .reset input {
+            padding: 10px 50px;
+            width: 97%;
+            border-radius: 3px;
+            border-style: none;
+            color: #fff;
+            background-color: #003E7E;
+            &:hover {
+                background-color: blue;
+            }
+        }
+    }
+}
+
+.answerMove {
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.flexContainer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.question1 {
+    margin-top: 0;
+    margin-bottom: 70px;
+    h2 {
+        margin-top: 0;
+        padding-top: 70px;
+    }
+}
+
+.question2, .question3, .question4, .question5 {
+    margin: 70px 0;
+    width: 100%;
+}
+
+h3 {
+    text-align: center;
+    padding-bottom: 40px;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 80px;
+    text-shadow: 3px 3px 3px #003E7E;
+}
